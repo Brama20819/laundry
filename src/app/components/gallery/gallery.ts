@@ -16,7 +16,9 @@ export class GalleryComponent {
     '/images/gallery-3.jpg',
     '/images/gallery-4.jpg',
     '/images/gallery-5.jpg',
-    '/images/picture.JPG'
+    '/images/picture.JPG',
+    '/images/gallery-6.jpeg',
+    '/images/gallery-7.jpeg'
   ];
 
   selectedImage: string | null = null;
