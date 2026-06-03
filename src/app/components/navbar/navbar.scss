@@ -22,6 +22,17 @@
 .logo-container img {
   height: 120px;
 }
+@media (max-width: 1024px) {
+  .logo-container img {
+    height: 1600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container img {
+    height: 160px;
+  }
+}
 
 .nav-links {
   display: flex;
