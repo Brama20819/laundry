@@ -1,0 +1,162 @@
+.pricing {
+  padding: 100px 10%;
+
+  background: white;
+}
+
+.pricing h2 {
+  text-align: center;
+
+  margin-bottom: 60px;
+
+  color: #15365b;
+}
+
+.pricing-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.pricing-card {
+  background: white;
+
+  border-top: 5px solid #d8ae45;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.pricing-card h3 {
+  background: #15365b;
+  color: white;
+
+  margin: -30px -30px 20px -30px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  border-radius: 12px 12px 0 0;
+  position: relative;
+}
+
+.pricing-card ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+.pricing-card li {
+  padding: 10px 0;
+
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 768px) {
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+.price-row {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+.price-row span:first-child {
+  white-space: nowrap;
+}
+.price-row span:first-child::after {
+  content: '';
+
+  display: inline-block;
+
+  width: 100%;
+
+  border-bottom: 1px dotted #b6c5d4;
+
+  margin: 0 10px;
+}
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0 20px;
+}
+
+.gold-divider span {
+  width: 45px;
+  height: 2px;
+  background: #c9a15a;
+}
+
+.gold-divider i {
+  width: 8px;
+  height: 8px;
+  background: #c9a15a;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
+
+.gold-divider i::before,
+.gold-divider i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: #c9a15a;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.gold-divider i::before {
+  left: -10px;
+}
+
+.gold-divider i::after {
+  right: -10px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 14px;
+  grid-template-columns: 180px 1fr 80px;
+}
+
+
+.service{
+  width: 50px;
+  flex-shrink: 0;
+}
+.price {
+  white-space: nowrap;
+
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: black;
+  margin: 0 12px;
+}
+.service1{
+  width: 130px;
+  flex-shrink: 0;
+}
+
+
+
+

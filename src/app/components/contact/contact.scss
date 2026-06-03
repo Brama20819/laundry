@@ -1,0 +1,52 @@
+.contact {
+  padding: 100px 10%;
+  background: #d7ecfa;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #15365b;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.contact-item {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-item h3 {
+  color: #15365b;
+}
+
+.contact-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-buttons button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #15365b;
+  color: white;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+}

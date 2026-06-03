@@ -1,0 +1,44 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  padding: 80px 10%;
+
+  background: #d7ecfa;
+}
+
+.feature-card {
+  ;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+  position: relative;
+}
+.feature-card:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  right: -15px;
+  top: 20%;
+
+  width: 4px;
+  height: 60%;
+
+  background: #aac8df;
+}
+.feature-icon {
+  font-size: 50px;
+
+  color: #15365b;
+
+  margin-bottom: 10px;
+}

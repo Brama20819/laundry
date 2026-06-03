@@ -1,0 +1,68 @@
+<section id="gallery" class="gallery">
+
+  <h2>Our Facility</h2>
+
+  <div class="gallery-grid">
+
+    <img
+      src="/images/gallery-1.jpg"
+      alt="Gallery 1"
+      (click)="openImage('/images/gallery-1.jpg')">
+
+    <img
+      src="/images/gallery-2.jpg"
+      alt="Gallery 2"
+      (click)="openImage('/images/gallery-2.jpg')">
+
+    <img
+      src="/images/gallery-3.jpg"
+      alt="Gallery 3"
+      (click)="openImage('/images/gallery-3.jpg')">
+
+    <img
+      src="/images/gallery-4.jpg"
+      alt="Gallery 4"
+      (click)="openImage('/images/gallery-4.jpg')">
+
+    <img
+      src="/images/gallery-5.jpg"
+      alt="Gallery 5"
+      (click)="openImage('/images/gallery-5.jpg')">
+
+    <img
+      src="/images/picture.JPG"
+      alt="Gallery 6"
+      (click)="openImage('/images/picture.JPG')">
+  </div>
+
+  <div
+    class="lightbox"
+    *ngIf="selectedImage"
+    (click)="closeImage()">
+
+    <button
+      class="arrow left-arrow"
+      (click)="previousImage(); $event.stopPropagation()">
+
+      &#10094;
+
+    </button>
+
+    <img
+      [src]="selectedImage"
+      alt="Gallery Image"
+      (click)="$event.stopPropagation()">
+
+    <button
+      class="arrow right-arrow"
+      (click)="nextImage(); $event.stopPropagation()">
+
+      &#10095;
+
+    </button>
+
+  </div>
+
+
+
+</section>
