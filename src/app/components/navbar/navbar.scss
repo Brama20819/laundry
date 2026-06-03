@@ -16,7 +16,7 @@
 
 .logo-container {
   position: absolute;
-  left: 30px; // keeps logo on left
+  left: 30px;
 }
 
 .logo-container img {
@@ -24,7 +24,7 @@
 }
 @media (max-width: 1024px) {
   .logo-container img {
-    height: 1600px;
+    height: 160px;
   }
 }
 
