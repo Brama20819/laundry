@@ -74,17 +74,7 @@
 .price-row span:first-child {
   white-space: nowrap;
 }
-.price-row span:first-child::after {
-  content: '';
 
-  display: inline-block;
-
-  width: 100%;
-
-  border-bottom: 1px dotted #b6c5d4;
-
-  margin: 0 10px;
-}
 .gold-divider {
   display: flex;
   align-items: center;
@@ -157,6 +147,16 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 768px) {
 
+  .pricing {
+    padding: 80px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
 
 
