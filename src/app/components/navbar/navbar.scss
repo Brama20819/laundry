@@ -20,17 +20,17 @@
 }
 
 .logo-container img {
-  height: 120px;
+  height: 95px;
 }
 @media (max-width: 1024px) {
   .logo-container img {
-    height: 160px;
+    height: 95px;
   }
 }
 
 @media (max-width: 768px) {
   .logo-container img {
-    height: 160px;
+    height: 95px;
   }
 }
 
@@ -90,33 +90,47 @@
 @media (max-width: 768px) {
 
   .navbar {
-    flex-direction: column;
-
-    justify-content: center;
-
-    height: auto;
-
-    padding: 15px;
+    height: 90px;
+    padding: 0 15px;
   }
 
   .logo-container {
-    position: static;
-
-    margin-bottom: 15px;
+    position: absolute;
+    left: 10px;
   }
 
   .logo-container img {
-    height: 70px;
+    height: 65px;
   }
 
   .nav-links {
-    display: flex;
+    gap: 12px;
 
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 15px;
+    margin-left: 70px;
   }
 
+  .nav-links a {
+    font-size: 13px;
+  }
+  @media (max-width: 480px) {
+
+    .logo-container {
+      left: 5px;
+    }
+
+    .logo-container img {
+      height: 70px;
+    }
+
+    .nav-links {
+      gap: 6px;
+
+      margin-left: 55px;
+    }
+
+    .nav-links a {
+      font-size: 11px;
+    }
+
+  }
 }
