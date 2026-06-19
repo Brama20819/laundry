@@ -27,7 +27,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: DIST_FOLDER_PATH
+          path: dist/dutch-girl-laundry
 
   deploy:
     needs: build
