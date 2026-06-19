@@ -2,7 +2,7 @@ name: Deploy Angular to GitHub Pages
 
 on:
   push:
-    branches: ["working"]
+    branches: [ "working" ]
   workflow_dispatch:
 
 permissions:
@@ -42,7 +42,12 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
