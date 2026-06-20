@@ -2,14 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 90px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #d7ecfa;
   z-index: 1000;
 }
@@ -22,17 +19,6 @@
 .logo-container img {
   height: 95px;
 }
-@media (max-width: 1024px) {
-  .logo-container img {
-    height: 95px;
-  }
-}
-
-@media (max-width: 768px) {
-  .logo-container img {
-    height: 95px;
-  }
-}
 
 .nav-links {
   display: flex;
@@ -41,28 +27,33 @@
 
 .nav-links a {
   position: relative;
+  display: inline-block;
   text-decoration: none;
   color: #15365b;
   font-size: 15px;
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: all 0.25s ease;
 }
+
 .nav-links a::after {
   content: '';
-
   position: absolute;
-
   left: 0;
   bottom: -6px;
-
   width: 0;
   height: 3px;
-
   background: #d8ae45;
   display: inline-block;
   transition: width 0.3s ease;
 }
-@media (hover:hover) {
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+
+@media (hover: hover) {
   .nav-links a:hover {
     color: #0f2c4d;
     transform: translateY(-2px);
@@ -71,25 +62,16 @@
   .nav-links a:hover::after {
     width: 100%;
   }
-  .nav-links a {
-    position: relative;
+}
 
-    display: inline-block;
 
-    transition: all 0.25s ease;
-  }
-
-  .nav-links a:hover {
-    transform: translateY(-2px);
-  }
-  .actions {
-    display: flex;
-    gap: 10px;
+@media (max-width: 1024px) {
+  .logo-container img {
+    height: 95px;
   }
 }
 
 @media (max-width: 768px) {
-
   .navbar {
     height: 90px;
     padding: 0 15px;
@@ -106,32 +88,31 @@
 
   .nav-links {
     gap: 12px;
-
     margin-left: 70px;
   }
 
   .nav-links a {
     font-size: 13px;
   }
-  @media (max-width: 480px) {
+}
 
-    .logo-container {
-      left: 5px;
-    }
 
-    .logo-container img {
-      height: 70px;
-    }
+@media (max-width: 480px) {
+  .logo-container {
+    position: absolute;
+    left: 5px;
+  }
 
-    .nav-links {
-      gap: 7.5px;
+  .logo-container img {
+    height: 70px;
+  }
 
-      margin-left: 55px;
-    }
+  .nav-links {
+    gap: 7.5px;
+    margin-left: 55px;
+  }
 
-    .nav-links a {
-      font-size: 12.5px;
-    }
-
+  .nav-links a {
+    font-size: 12.5px;
   }
 }
