@@ -11,15 +11,15 @@ import { CommonModule } from '@angular/common';
 export class GalleryComponent {
 
   images: string[] = [
-    '/images/gallery-1.jpg',
-    '/images/gallery-2.jpg',
-    '/images/gallery-3.jpg',
-    '/images/gallery-4.jpg',
-    '/images/gallery-5.jpg',
-    '/images/picture.JPG',
-    '/images/gallery-6.jpeg',
-    '/images/gallery-7.jpeg',
-    '/images/imagelast.JPEG'
+    'images/gallery-1.jpg',
+    'images/gallery-2.jpg',
+    'images/gallery-3.jpg',
+    'images/gallery-4.jpg',
+    'images/gallery-5.jpg',
+    'images/picture.JPG',
+    'images/gallery-6.jpeg',
+    'images/gallery-7.jpeg',
+    'images/imagelast.JPEG'
   ];
 
   selectedImage: string | null = null;
