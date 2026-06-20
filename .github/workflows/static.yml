@@ -35,7 +35,7 @@ jobs:
 
       - name: Build Angular Application
 
-        run: npx ng build --configuration production --base-href /laundry/
+        run: npx ng build --configuration production --base-href /DutchGirlLaundry/
 
       - name: Upload Production Artifact
         uses: actions/upload-pages-artifact@v3
